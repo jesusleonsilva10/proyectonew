@@ -1,8 +1,13 @@
-<html>
-	<head>
-		<title>Mi primera pagina</title>
-	</head>
-	<body>
-		<h1> aqui empieza mi pagina </h1>
-	</body>
-</html>
+ foreach ($returndi as $opdivision) {
+            
+            foreach ($returnmul as $opmultiplicacion) {
+                 
+                foreach ($returnres as $opresta) {
+                     
+                    foreach ($returnsum as $opsuma) {
+                        
+                
+            
+            //resultados de la operacion suma en la tabla en elcampo suma de la tabla operaciones de la bd
+           $ins="INSERT INTO operaciones(division, multiplicacion, resta, suma) VALUES ('$opdivision', '$opmultiplicacion', '$opresta', '$opsuma')";
+            $insertar = mysqli_query($con, $ins);
